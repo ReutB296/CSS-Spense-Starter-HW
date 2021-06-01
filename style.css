@@ -419,7 +419,7 @@ object-position:100% 40% ;
     nav{
         transform: translateX(100%);
        flex-direction: column;
-  
+      
         position: absolute;
         top: 0;
         right: 0;
@@ -447,6 +447,7 @@ object-position:100% 40% ;
         background: rgba(0,0,0,.8);
         flex-direction: column;
         padding-top: 40px;
+        visibility: hidden;
      
       
          /* padding: 50px 70px;  */
@@ -457,6 +458,7 @@ object-position:100% 40% ;
        nav:hover ul,  nav:hover h2  {
         transform: translateX(0);
          width: 100vw; 
+         visibility: visible;
     }
 
     nav ul li{
@@ -473,7 +475,7 @@ object-position:100% 40% ;
         transform: translateX(100%);
         transition: all 300ms;
         position: absolute;
-      
+        visibility: hidden;
         right: 0;
        text-align: center;
         color: white;
