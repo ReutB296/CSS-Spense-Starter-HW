@@ -1,0 +1,495 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background: #f0eeeb;
+	line-height: 1;
+    font-family: 'Nunito Sans', sans-serif;
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-rows: 40px auto 250px;
+    grid-template-areas: 
+        "header  header   header"
+        "main     main    main"
+        "footer footer  footer";
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.logos li img{
+    width: 130px;
+}
+
+
+nav{
+    font-size: 20px;
+    background: #f0eeeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: nav;
+    padding-top: 50px;
+   
+}
+
+nav ul{
+    display: flex;
+    align-items: baseline;
+}
+
+nav ul li{
+    padding-right:20px;
+}
+
+nav h2{
+    font-weight: 700; 
+}
+
+nav ul .button{
+    color: white;
+    background: black;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border: 0;
+    
+}
+
+.promotion{
+    background: #f0eeeb;
+    grid-area: header;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    line-height:35px;
+}
+ main{
+    grid-area: main;
+    
+ }
+
+.section_1{
+    background: #f0eeeb;
+    height: 88vh; 
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-rows: 40px auto;
+    grid-template-areas: 
+        "gutter         nav     gutter-r"
+        "gutter     article1    gutter-r";
+      
+}
+
+.banner{
+    background: #f0eeeb;
+    background-image: url('Assets/Phone\ Mockup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    grid-area: article1;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    padding-left: 50px;
+  
+  
+}
+
+.banner h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}
+
+.banner p{
+    width: 55%;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #5a5444;
+
+}
+
+.banner a{
+  text-decoration: underline;
+  font-weight: 700;
+  color: #5a5444;
+
+}
+
+.article2{
+    grid-area: article2;
+    display: flex;
+}
+
+.article2 div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+}
+
+.article2 div:nth-child(2) h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.article2 div:nth-child(2) p,  .article2 div:nth-child(2) a{
+    font-size: 20px;
+    line-height: 1.8;
+    color: #5a5444;
+    
+}
+
+.article2 div:nth-child(2) a{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.promotion span{
+    text-decoration: underline;
+}
+
+.section_1 article{
+    line-height: 1.5; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+    grid-area: article1;
+ 
+}
+.section_1 article div:first-child{
+    line-height: 1.5; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+
+.img img{
+    width: 550px;
+    height:650px;
+} 
+
+.section_1 article p{
+    color: #5a5444;
+
+}
+
+.section_1 article h1{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.section_1 article ul{
+    color: #5a5444;
+}
+
+
+.section_1 form input{
+    line-height: 45px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: center;
+    color: #5a5444;
+}
+
+.get_started{
+    color: white;
+    background: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 700;
+    
+}
+
+.section_1 article ul li::before{
+    content:  '';
+    background-image: url('Assets/Checkmark.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.article2 div img{
+    width: 800px;
+    height: 500px;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+.section_2 aside{
+    background-color: white;
+    grid-area: aside1;
+    padding-top:20px;
+}
+
+.section_2{
+    background-color: white;
+    height: 100vh;  
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-rows:   100px 350px auto;
+    grid-template-areas: 
+        "gutter  aside1   gutter-r"
+        "gutter article1   gutter-r"
+        "gutter article2   gutter-r";
+          
+}
+
+
+footer{
+    grid-area: footer;
+    background: black;
+    color: white;
+     display: flex;
+     gap:50px;
+     justify-content: center;
+     font-size: 20px;
+     padding-top: 50px;
+  
+}
+
+ footer ul{
+    display: flex;
+    flex-direction: column; 
+    gap:15px;
+  
+ }
+
+ footer ul li{
+     color: #868787;
+ }
+
+ footer ul:first-child{
+  padding-right: 250px;
+ }
+
+ 
+ footer ul li:first-child{
+     font-weight: 700;
+     color: white;
+ }
+
+
+  @media (max-width: 768px) {
+body{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+   
+}
+
+.section_2, .section_1{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.section_1 article{
+    flex-direction: column-reverse;
+    
+}
+
+nav{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.banner{
+    flex-direction: column;
+    width: 80%;
+    margin-left: 40px;
+   
+}
+
+
+.img img{
+object-fit: cover;
+width: 900px;
+height:400px;
+object-position:100% 40% ;
+}
+
+.section_1 article div:first-child{
+    padding-left: 30px; 
+    gap:10px;
+}
+
+.article2{
+    flex-direction: column-reverse;
+    
+}
+
+.article2 div:nth-child(2){
+    width: 70%;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.article2 div:nth-child(1){
+    padding-left: 100px;
+}
+  
+  }
+   
+
+  @media (max-width: 480px) {
+    body {
+        display: grid;
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: 40px auto 80px;
+        grid-template-areas: 
+            "header  header   header"
+            "main     main    main"
+            "footer footer  footer";
+            min-height: 100vh;
+            max-width: 100vw;
+    }
+
+    .promotion{
+        text-align: left;
+        /* display: flex;
+        flex-wrap: nowrap;
+        align-self: center; */
+      
+    }
+
+    
+.img img{
+    object-fit: cover;
+    width: 100vw;
+    height:400px;
+    object-position:100% 40% ;
+    }
+    main{
+        max-width: 100vw;
+    }
+
+    .section1, .section2, header{
+        max-width: 100vw;
+    }
+
+  
+    nav{
+        transform: translateX(100%);
+       flex-direction: column;
+  
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        gap: 20px;;
+        /* width: max-content; */
+  
+    
+    }
+     nav::after {
+        content:  '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('Assets/Hamburger\ Menu.svg');
+    }
+     nav ul{
+        transform: translateX(100%);
+        transition: all 300ms;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        color: white;
+        background: rgba(0,0,0,.8);
+        flex-direction: column;
+        padding-top: 40px;
+     
+      
+         /* padding: 50px 70px;  */
+       
+        
+    }
+ 
+       nav:hover ul,  nav:hover h2  {
+        transform: translateX(0);
+         width: 100vw; 
+    }
+
+    nav ul li{
+        padding-bottom:20px;
+        padding-left: 40%;
+       
+    }
+
+    .importantLinks{
+        margin-top: 160px;
+    }
+
+    nav h2{
+        transform: translateX(100%);
+        transition: all 300ms;
+        position: absolute;
+      
+        right: 0;
+       text-align: center;
+        color: white;
+        background: rgba(0,0,0,.8);
+        z-index: 1;
+    }
+
+    nav ul .button{
+        margin-left: 40%;
+        background: #f0eeeb ;
+        color: black;
+    }
+
+    .section_1 nav ul:nth-child(2) {
+        margin-top:20px;
+      
+    }
+ } 
+ 

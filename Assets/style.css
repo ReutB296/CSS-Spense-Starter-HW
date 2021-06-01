@@ -1,0 +1,374 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background: #f0eeeb;
+	line-height: 1;
+    font-family: 'Nunito Sans', sans-serif;
+    display: grid;
+    grid-template-columns: auto 1500px auto;
+    grid-template-rows: 40px 100px auto 200px;
+    grid-template-areas: 
+        "aside  aside   aside"
+        "gutter header  gutter-r"
+        "main    main    main"
+        "footer footer  footer";
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.logos li img{
+    width: 130px;
+}
+
+
+header{
+    grid-area: header;
+    background: #f0eeeb;
+}
+
+nav{
+    font-size: 20px;
+    background: #f0eeeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+nav ul{
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+nav ul li{
+    padding-right:20px;
+}
+
+.importantLinks li:first-child{
+    line-height: 80px;
+}
+
+
+nav h2{
+    font-weight: 700; 
+}
+
+nav ul .button{
+    color: white;
+    background: black;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border: 0;
+    
+}
+
+.promotion{
+    grid-area: aside;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    line-height:35px;
+}
+ main{
+    grid-area: main;
+    
+ }
+
+.section_1{
+    background: #f0eeeb;
+    height: 88vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.banner{
+    background: #f0eeeb;
+    background-image: url('Assets/Phone\ Mockup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    grid-area: article1;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+  
+  
+}
+
+.banner h2{
+    font-size: 40px;
+    font-weight: 700;
+    width: 25%;
+    line-height: 1.2;
+    padding-left: 70px;
+}
+
+.banner p{
+    width: 40%;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #5a5444;
+    padding-left: 70px;
+}
+
+.banner a{
+  text-decoration: underline;
+  font-weight: 700;
+  color: #5a5444;
+  padding-left: 70px;
+}
+
+.article2{
+    grid-area: article2;
+    display: flex;
+}
+
+.article2 div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+}
+
+.article2 div:nth-child(2) h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.article2 div:nth-child(2) p,  .article2 div:nth-child(2) a{
+    font-size: 20px;
+    line-height: 1.8;
+    color: #5a5444;
+    
+}
+
+.article2 div:nth-child(2) a{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.promotion span{
+    text-decoration: underline;
+}
+
+.section_1 article{
+    line-height: 1.5; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;  
+    height: 70%;
+    width: 40%;
+    
+ 
+}
+.img{
+    height: 80%;
+    width: 40%;
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+} 
+
+.section_1 article p{
+    color: #5a5444;
+
+}
+
+.section_1 article h1{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.section_1 article ul{
+    color: #5a5444;
+}
+
+
+.section_1 form input{
+    line-height: 45px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: center;
+    color: #5a5444;
+}
+
+.get_started{
+    color: white;
+    background: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 700;
+    
+}
+
+.section_1 article ul li::before{
+    content:  '';
+    background-image: url('Assets/Checkmark.svg');
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.article2 div img{
+    width: 800px;
+    height: 600px;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.section_2 aside{
+    background-color: white;
+    grid-area: aside1;
+    padding-top:20px;
+}
+
+.section_2{
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 1500px auto;
+    grid-template-rows:   100px 548px 548px;
+    grid-template-areas: 
+        "gutter  aside1   gutter-r"
+        "gutter article1   gutter-r"
+        "gutter article2   gutter-r";
+
+}
+
+
+footer{
+    grid-area: footer;
+    background: black;
+    color: white;
+     display: flex;
+     gap:50px;
+     justify-content: center;
+     font-size: 20px;
+  
+}
+
+ footer ul{
+    display: flex;
+    flex-direction: column; 
+    gap:15px;
+    margin-top: 10px;
+ }
+
+ footer ul:first-child{
+  padding-right: 250px;
+ }
+
+ 
+ footer ul li:first-child{
+     font-weight: 800;
+ }
+
+ @media (max-width: 768px) {
+   body{
+    grid-template-columns: 40px auto 40px;
+   }
+   .section_1{
+   flex-direction: column-reverse;
+   width: 60%;
+  
+ }
+
+ .img{
+     height: 40%;
+ }
+
+ .img img{
+    object-fit: cover;
+    object-position: 100% 20%;
+ }
+ .section_1 article h1{
+    font-size: 30px;
+ }
+
+header{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    font-size: 10px;
+    justify-content: space-around;
+}
+
+nav ul{
+    padding-left: 30px;
+}
+nav ul li{
+    padding-right:10px;
+}
+nav h2{
+    margin-top: 20px;
+}
+
+nav ul .button{
+    padding: 15px 15px;
+}
+.promotion{
+    text-align: center;
+    width: 60%;
+    margin-left: 30px;
+}
+.section_2{
+    grid-template-columns: 20px auto 20px;
+    /* grid-template-rows:   20 548px 548px; */
+}
+
+}
+
+ @media (max-width: 480px) {
+ }
