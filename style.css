@@ -494,7 +494,7 @@ footer ul:nth-child(1){
         height: 24px;
         background: url('Assets/Hamburger\ Menu.svg');
     }
-     nav ul{
+     nav ul {
         transform: translateX(100%);
         transition: all 300ms;
         position: absolute;
@@ -506,15 +506,18 @@ footer ul:nth-child(1){
         flex-direction: column;
         padding-top: 40px;
         visibility: hidden;
-     
-       
-        
+
     }
- 
-       nav:hover ul,  nav:hover h2  {
+
+
+       .container nav:hover ul,  .container nav:hover h2  {
         transform: translateX(0);
-         width: 100vw; 
+         width: 50vw; 
          visibility: visible;
+    }
+
+    nav ul li:hover{
+        visibility: visible;
     }
 
     nav ul li{
